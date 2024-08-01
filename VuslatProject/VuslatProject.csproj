@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\eca-amblem.jpg" />
+    <Content Remove="wwwroot\images\eca-icon.ico" />
+    <Content Remove="wwwroot\images\ecaLogo.png" />
+    <Content Remove="wwwroot\images\ecaLogoKüçük.png" />
+    <Content Remove="wwwroot\images\elginkan-logo.png" />
+    <Content Remove="wwwroot\images\elginkan-logo2.png" />
+    <Content Remove="wwwroot\images\valfsel--logo.htm" />
+    <Content Remove="wwwroot\images\valfsel--logo.jpg" />
+    <Content Remove="wwwroot\images\valfselLogo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\eca-amblem.jpg" />
+    <None Include="wwwroot\images\eca-icon.ico" />
+    <None Include="wwwroot\images\ecaLogo.png" />
+    <None Include="wwwroot\images\ecaLogoKüçük.png" />
+    <None Include="wwwroot\images\elginkan-logo.png" />
+    <None Include="wwwroot\images\elginkan-logo2.png" />
+    <None Include="wwwroot\images\valfsel--logo.htm" />
+    <None Include="wwwroot\images\valfsel--logo.jpg" />
+    <None Include="wwwroot\images\valfselLogo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+  </ItemGroup>
+
+</Project>

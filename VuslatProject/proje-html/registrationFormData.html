@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaydedilen Form Verileri</title>
+</head>
+
+<body>
+    <h2>Kaydedilen Form Verileri</h2>
+    <div id="display"></div>
+
+    <script>
+        // localStorage'dan formData'yı al
+        var storedData = localStorage.getItem('formData');
+
+        // Eğer formData varsa
+        if (storedData) {
+            var formData = JSON.parse(storedData);
+            var displayHtml = '';
+
+            // Her bir kayıt için HTML oluştur
+            for (var key in formData) {
+                if (formData.hasOwnProperty(key)) {
+                    displayHtml += '<p><strong>Ad:</strong> ' + key + '</p>';
+                    displayHtml += '<p><strong>Soyad:</strong> ' + formData[key].surname + '</p>';
+                    displayHtml += '<p><strong>Telefon Numarası:</strong> ' + formData[key].number + '</p>';
+                    displayHtml += '<p><strong>E-posta:</strong> ' + formData[key].email + '</p>';
+                    displayHtml += '<p><strong>Tarih ve Saat:</strong> ' + formData[key].dateTime + '</p>';
+                    displayHtml += '<hr>';
+                }
+            }
+
+            // HTML'i sayfaya ekle
+            document.getElementById('display').innerHTML = displayHtml;
+        } else {
+            document.getElementById('display').innerHTML = '<p>Kayıtlı form verisi bulunamadı.</p>';
+        }
+    </script>
+</body>
+
+</html>

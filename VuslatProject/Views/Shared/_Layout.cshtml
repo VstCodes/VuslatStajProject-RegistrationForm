@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Valfsel - Ziyaretçi Kayıt Formu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="valfsel için ziyaretçi kayıt formu denemesi">
+
+    <link rel="stylesheet" href="~/css/RegistrationForm.css">
+    <style>
+        /* select {
+            width: 950px;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            opacity: 0.7;
+        } */
+    </style>
+
+
+
+</head>
+
+<body id="topPage">
+    <div id="page">
+        <header id="banner">
+            <p id="leftPart">
+                VALFSEL ARMATÜR SANAYİ A.Ş.
+                <b>ELGİNKAN TOPLULUĞU</b> KURULUŞUDUR.
+            </p>
+            <p id="rightPart">
+                <a href="https://valfsel.com.tr/tr">TR</a>
+                -
+                <a href="https://valfsel.com.tr/en">EN</a>
+            </p>
+        </header>
+        <nav id="menu">
+            <a href="https://valfsel.com">
+                <img src="~/images/valfselLogo.jpg"
+                     alt="Valfsel Logo">
+            </a>
+
+            <ul id="navbar">
+                <li>
+                    <a href="https://valfsel.com.tr/vakif-kurucumuz">
+                        VAKFIMIZ
+                    </a>
+                </li>
+                <li>
+                    <a href="https://valfsel.com.tr/egitim-merkezleri">
+                        SOSYAL SORUMLULUK
+                    </a>
+                </li>
+                <li>
+                    <a href="https://elginkankariyer.com/">
+                        KARİYER
+                    </a>
+                </li>
+                <li>
+                    <a href="https://valfsel.com.tr/firmamiz">
+                        KURUMSAL
+                    </a>
+                </li>
+                <li id="dropdown">
+                    ÜRÜNLERİMİZ
+                    <ul id="dropdown_content">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://eca.com.tr/bayiler">
+                        BAYİ/SERVİS
+                    </a>
+                </li>
+                <li>
+                    <a href="https://valfsel.com.tr/iletisim">
+                        İLETİŞİM
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- #region name -->
+        @RenderBody();
+
+        <!-- #endregion -->
+
+        <aside id="sidebar">
+            <h2 id="sectionHead" style="padding-top: 40px;">Haberler</h2>
+            <section class="haber-container">
+                <a href="https://valfsel.com.tr/gila-benmayor-un-hurriyet-internet-te-yayinlanan-elginkan-toplulugu-ve-e-c-a-serel-hakkindaki-yazisi">
+                    <article class="haber-box" style="margin-right: 30px;">
+                        <img src=" https://valfsel.com.tr/upload/content/content_2022-12-15_12-21-311.jpg" alt="" />
+
+                        <article class="textbox" style="margin-right: 30px;">
+                            <h5 class="card-title" style="max-height: 45px; overflow: hidden;">
+                                Gila Benmayor’un Hürriyet İnternet’te Yayınlanan Elginkan Toplulu ...
+                            </h5>
+                            <p>
+                                Pavarotti seven başkanın izi İstanbul Müzik Festivali’nde
+                                THE Times’ın sesini “24 ayar altından daha değerli” diye tanımladığı Amerikalı
+                                mezzosoprano ...
+                            </p>
+                        </article>
+                    </article>
+
+
+                </a>
+
+                <a href="https://valfsel.com.tr/trabzon-rize-ve-erzurumda-yapi-grubu-seminerleri-gerceklestirildi">
+                    <article class="haber-box" style="margin-right: 30px;">
+
+                        <img src=" https://valfsel.com.tr/upload/content/content_2022-05-05_17-30-071.png" alt="" />
+
+                        <article class="textbox" style="margin-right: 30px;">
+                            <h5 class="card-title" style="max-height: 45px; overflow: hidden;">
+                                Trabzon, Rize Ve Erzurumda Yapı Grubu Seminerleri Gerçekleştirild ...
+                            </h5>
+                            <p>
+                                E.C.A. SEREL markalı ürünlerimize yönelik 21 Şubat- Trabzon Heros Otel, 22 Şubat Rize
+                                Yakamoz Otel ve 23 Şubat Erzurum Polat Palandöken Otel’de yapı g ...
+                            </p>
+                        </article>
+
+                    </article>
+
+                </a>
+
+                <a href="https://valfsel.com.tr/turkiye-de-ilk-kez-gerceklestirilen-kamuda-enerji-performans-sozlesmesi-projesi-3">
+                    <article class="haber-box">
+                        <img src=" https://valfsel.com.tr/upload/content/content_2022-05-05_17-24-541.jpg" alt="" />
+
+                        <article class="textbox" style="margin-right: 30px;">
+                            <h5 class="card-title" style="max-height: 45px; overflow: hidden;">
+                                Türkiye’de İlk Kez Gerçekleştirilen Kamuda Enerji Performans Sözl ...
+                            </h5>
+                            <p>
+                                T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı Yapı İşleri Genel Müdürlüğü
+                                tarafından yürütülen “Türkiye’de Kamu Binalarında Enerji Verimliliği ...
+                            </p>
+                        </article>
+
+                    </article>
+
+                </a>
+
+
+
+                <a href="https://valfsel.com.tr/haberler" id="link">Tüm Haberler > </a>
+            </section>
+
+        </aside>
+        <footer id="bottom_of_page">
+            <section id="topSection">
+                <a href="https://valfsel.com.tr">
+                    <img src="~/images/eca-icon.ico">
+                </a>
+
+                <a href="#topPage" id="top-link">Üste Çık</a>
+            </section>
+            <section id="middleSection">
+                <ul>
+                    <a href="https://ecateknikurunler.com.tr/">
+                    <li>Profesyoneller</li>
+                    </a>
+                    <a href="https://valfsel.com.tr/sikca-sorulan-sorular">
+                    <li>Tüketici Köşesi</li>
+                    </a>
+                    <a href="https://eca.com.tr/haberler">
+                    <li>Haberler</li>
+                    </a>
+                    <a href="https://valfsel.com.tr/ihracat-gerceklestirilen-ulkeler">
+                    <li>Uluslararası Ağımız</li>
+                    </a>
+                    <a href="https://elginkankariyer.com/">
+                    <li>Kariyer</li>
+                    </a>
+                    <a href="https://valfsel.com.tr/mobil-uygulama-gizlilik-bildirimi">
+                    <li>Mobil Uygulama Gizlilik Bildirimi</li>
+                    </a>
+                </ul>
+            </section>
+            <section id="bottomSection">
+                <a href="https://elginkan.com.tr/">
+                    <img src="~/images/elginkan-logo2.png">
+                </a>
+                <p>Copyright © E.C.A. - Serel 2023</p>
+            </section>
+
+        </footer>
+    </div>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const phoneNumberInput = document.getElementById('number');
+        const phoneError = document.getElementById('phoneError');
+
+        phoneNumberInput.addEventListener('input', function () {
+            const phoneNumber = phoneNumberInput.value.trim();
+
+            // Telefon numarasının sadece rakamlardan oluştuğunu kontrol et
+            if (!/^\d+$/.test(phoneNumber)) {
+                phoneError.textContent = 'Telefon numarası sadece rakamlardan oluşmalıdır.';
+                phoneError.style.display = 'block'; // Hata mesajını göster
+            } else if (phoneNumber.length < 11) {
+                phoneError.textContent = 'Telefon numarası doğru değil, numara 11 rakam olmalıdır.';
+                phoneError.style.display = 'block'; // Hata mesajını göster
+            } else {
+                // Geçerli bir telefon numarası girişi
+                phoneError.textContent = '';
+                phoneError.style.display = 'none'; // Hata mesajını gizle
+            }
+        });
+
+    </script>
+
+    @* <script>
+
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+    // Formun varsayılan gönderimini engelleyelim
+    event.preventDefault();
+
+    // Email input'un değerini alalım
+    var email = document.getElementById('email').value.toLowerCase();
+
+    // Geçerli domain uzantıları
+    var allowedDomains = ['@@gmail.com', '@@yahoo.com', '@@outlook.com'];
+
+    // Email adresinin geçerli bir domain uzantısına sahip olup olmadığını kontrol edelim
+    var isValid = allowedDomains.some(function (domain) {
+    return email.endsWith(domain);
+    });
+
+    // Eğer geçerli değilse uyarıyı göster
+    if (!isValid) {
+    document.getElementById('emailError').style.display = 'inline';
+    } /* else { */
+    // document.getElementById("myForm").addEventListener("submit", function (event) {
+    //     event.preventDefault();
+
+    //     var name = document.getElementById("name").value;
+    //     var surname = document.getElementById("surname").value;
+    //     var number = document.getElementById("number").value;
+    //     var email = document.getElementById("email").value;
+
+    //     // Formun doldurulduğu tarih ve saat bilgisini al.
+    //     var dateTime = new Date();
+    //     // Tarih ve saat bilgisini yerel saat dilimine göre biçimlendir.
+    //     var formattedDate = dateTime.toLocaleString();
+
+    //     // localStorage'daki formData'yı al
+    //     var existingData = localStorage.getItem("formData");
+    //     // Eğer formData varsa, JSON formatından JavaScript nesnesine çevir
+    //     // Eğer formData yoksa, boş bir JavaScript nesnesi oluştur
+    //     var formData = existingData ? JSON.parse(existingData) : {};
+
+    //     // Yeni veriyi localStorage'daki formData'ya ekler.
+    //     // Eğer aynı isimle giriş olduysa kaydı günceller
+    //     // Eğer farklı isimle giriş olursa yeni kişi oluşturur
+    //     formData[name] = { surname: surname, number: number, email: email, dateTime: formattedDate };
+
+    //     // localStorage'a güncellenmiş formData nesnesini JSON formatında kaydet
+    //     localStorage.setItem('formData', JSON.stringify(formData));
+
+    //     // Formu temizle (input alanlarını sıfırla).
+    //     document.getElementById('myForm').reset();
+
+    //     // Başka bir sayfaya yönlendirme.
+    //     window.location.href = "registrationData.html";
+    // });
+
+    //}
+    });
+
+    </script>
+    *@
+
+
+</body>
+
+</html>

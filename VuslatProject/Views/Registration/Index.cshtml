@@ -1,0 +1,54 @@
+﻿@using VuslatProject.Models.RegistrationInfo
+@model VuslatProject.Models.RegistrationInfo.Visitor
+
+<link rel="stylesheet" href="~/css/RegistrationForm.css">
+<form id="myForm" asp-action="Create" method="post">
+    <div class="container">
+        <h1>Valfsel - Ziyaretçi Kayıt Formu</h1>
+        <br>
+        <p>Lütfen Ziyaretçi Kayıt Formunu Doldurunuz.</p>
+        <br>
+        <hr>
+
+        <label for="name"><b>İSİM:</b></label>
+        <input type="text" placeholder="İsminizi Giriniz" name="VisitorName" id="name" required asp-for="VisitorName">
+
+        <label for="surname"><b>SOYİSİM:</b></label>
+        <input type="text" placeholder="Soyadınızı Giriniz" name="VisitorSurname" id="surname" required asp-for="VisitorSurname">
+
+        <label for="number"><b>TELEFON NUMARASI:</b></label>
+        <input type="text" asp-for="VisitorPhoneNum" placeholder=" Telefon Numaranızı Giriniz" name="VisitorPhoneNum" id="number" maxlength="11" required>
+        <div id="phoneError" class="error-message"></div>
+
+        <label for="email"><b>EMAİL:</b></label>
+        <input type="email" placeholder="Email Adresinizi Giriniz" name="VisitorEmail" id="email" required asp-for="VisitorEmail">
+        <span id="emailError" class="error-message">Lütfen geçerli bir email adresi giriniz.</span>
+
+        <hr>
+
+        <label for="departmant"><b>ZİYARET EDECEĞİNİZ BÖLÜM:</b></label>
+        <select id="departments" name="SelectedDepartmentId" asp-for="SelectedDepartmentId" >
+            <option  selected disabled hidden class="options">Lütfen Ziyaret Edeceğiniz Bölümü Seçiniz</option>
+            @foreach (var department in ViewBag.Departments)
+            {
+                <option class="options"  value="@department.Id">@department.DepartmentName</option>
+            }
+        </select>
+
+        <label for="employee"><b>ZİYARET EDECEĞİNİZ KİŞİ:</b></label>
+        <select class="select-option" id="employee" name="EmployeeId" asp-for="EmployeeId" >
+            <option selected disabled hidden>İnsan Seçiniz</option>
+            @foreach (var employee in ViewBag.Employees)
+            {
+                <option class="options" value="@employee.Id">@employee.Name @employee.Surname</option>
+            }
+        </select>
+
+        <label for="purpose"><b>ZİYARET ETME NEDENİNİZ:</b></label>
+        <input type="textarea"   placeholder="Ziyaret Etme Nedeninizi Giriniz" name="Purpose" id="purpose" required asp-for="Purpose" ></input>
+
+        <hr>
+
+        <button type="submit" class="registerbtn">FORMU GÖNDER</button>
+    </div>
+</form>
